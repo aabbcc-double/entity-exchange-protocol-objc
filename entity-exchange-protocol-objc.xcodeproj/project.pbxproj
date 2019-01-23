@@ -15,7 +15,33 @@
 		BA06A8A821F8A0E900914A71 /* EEPOConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8A321F8A09700914A71 /* EEPOConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA06A8AB21F8A1F900914A71 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A8AA21F8A1F900914A71 /* CocoaAsyncSocket.framework */; };
 		BA06A8AD21F8A20200914A71 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A8AC21F8A20200914A71 /* CocoaAsyncSocket.framework */; };
+		BA06A8AF21F8A39D00914A71 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A8AE21F8A39D00914A71 /* libsqlite3.tbd */; };
+		BA06A8B121F8A3A200914A71 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A8B021F8A3A200914A71 /* libsqlite3.tbd */; };
+		BA06A8B521F8A49B00914A71 /* EEPOMaster.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8B321F8A49B00914A71 /* EEPOMaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8B621F8A49B00914A71 /* EEPOMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8B421F8A49B00914A71 /* EEPOMaster.m */; };
+		BA06A8B721F8A4B200914A71 /* EEPOMaster.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8B321F8A49B00914A71 /* EEPOMaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8B821F8A91B00914A71 /* EEPOConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8B221F8A44500914A71 /* EEPOConnection+Private.h */; };
+		BA06A8B921F8A91B00914A71 /* EEPOConnection+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8B221F8A44500914A71 /* EEPOConnection+Private.h */; };
+		BA06A8BC21F8A95D00914A71 /* EEPOStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8BA21F8A95D00914A71 /* EEPOStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8BD21F8A95D00914A71 /* EEPOStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8BB21F8A95D00914A71 /* EEPOStorage.m */; };
+		BA06A8BE21F8A98600914A71 /* EEPOStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8BA21F8A95D00914A71 /* EEPOStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8C121F8B1E600914A71 /* EEPOCommandParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8BF21F8B1E600914A71 /* EEPOCommandParser.h */; };
+		BA06A8C221F8B1E600914A71 /* EEPOCommandParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8BF21F8B1E600914A71 /* EEPOCommandParser.h */; };
+		BA06A8C321F8B1E600914A71 /* EEPOCommandParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8C021F8B1E600914A71 /* EEPOCommandParser.m */; };
+		BA06A8C421F8B1E600914A71 /* EEPOCommandParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8C021F8B1E600914A71 /* EEPOCommandParser.m */; };
+		BA06A8CE21F8B73500914A71 /* EntityExchangeProtocolObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A88821F89F5B00914A71 /* EntityExchangeProtocolObjC.framework */; };
+		BA06A8D521F8B74D00914A71 /* ParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8D421F8B74D00914A71 /* ParserTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA06A8CF21F8B73500914A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA06A87F21F89F5B00914A71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA06A88721F89F5B00914A71;
+			remoteInfo = "entity-exchange-protocol-objc";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BA06A88821F89F5B00914A71 /* EntityExchangeProtocolObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EntityExchangeProtocolObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,8 +50,20 @@
 		BA06A89821F8A00800914A71 /* EntityExchangeProtocolObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EntityExchangeProtocolObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA06A8A321F8A09700914A71 /* EEPOConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOConnection.h; sourceTree = "<group>"; };
 		BA06A8A421F8A09700914A71 /* EEPOConnection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOConnection.m; sourceTree = "<group>"; };
-		BA06A8AA21F8A1F900914A71 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		BA06A8AA21F8A1F900914A71 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/Mac/CocoaAsyncSocket.framework; sourceTree = SOURCE_ROOT; };
 		BA06A8AC21F8A20200914A71 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		BA06A8AE21F8A39D00914A71 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		BA06A8B021F8A3A200914A71 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		BA06A8B221F8A44500914A71 /* EEPOConnection+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEPOConnection+Private.h"; sourceTree = "<group>"; };
+		BA06A8B321F8A49B00914A71 /* EEPOMaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOMaster.h; sourceTree = "<group>"; };
+		BA06A8B421F8A49B00914A71 /* EEPOMaster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOMaster.m; sourceTree = "<group>"; };
+		BA06A8BA21F8A95D00914A71 /* EEPOStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOStorage.h; sourceTree = "<group>"; };
+		BA06A8BB21F8A95D00914A71 /* EEPOStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOStorage.m; sourceTree = "<group>"; };
+		BA06A8BF21F8B1E600914A71 /* EEPOCommandParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOCommandParser.h; sourceTree = "<group>"; };
+		BA06A8C021F8B1E600914A71 /* EEPOCommandParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOCommandParser.m; sourceTree = "<group>"; };
+		BA06A8C921F8B73500914A71 /* EntityExchangeProtocolObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntityExchangeProtocolObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA06A8CD21F8B73500914A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA06A8D421F8B74D00914A71 /* ParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8AF21F8A39D00914A71 /* libsqlite3.tbd in Frameworks */,
 				BA06A8AB21F8A1F900914A71 /* CocoaAsyncSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +80,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8B121F8A3A200914A71 /* libsqlite3.tbd in Frameworks */,
 				BA06A8AD21F8A20200914A71 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA06A8C621F8B73500914A71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA06A8CE21F8B73500914A71 /* EntityExchangeProtocolObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BA06A88A21F89F5B00914A71 /* entity-exchange-protocol-objc */,
+				BA06A8CA21F8B73500914A71 /* EntityExchangeProtocolObjCTests */,
 				BA06A88921F89F5B00914A71 /* Products */,
 				BA06A8A921F8A1F900914A71 /* Frameworks */,
 			);
@@ -62,6 +111,7 @@
 			children = (
 				BA06A88821F89F5B00914A71 /* EntityExchangeProtocolObjC.framework */,
 				BA06A89821F8A00800914A71 /* EntityExchangeProtocolObjC.framework */,
+				BA06A8C921F8B73500914A71 /* EntityExchangeProtocolObjCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,7 +122,14 @@
 				BA06A88B21F89F5B00914A71 /* EntityExchangeProtocolObjc.h */,
 				BA06A88C21F89F5B00914A71 /* Info.plist */,
 				BA06A8A321F8A09700914A71 /* EEPOConnection.h */,
+				BA06A8B221F8A44500914A71 /* EEPOConnection+Private.h */,
 				BA06A8A421F8A09700914A71 /* EEPOConnection.m */,
+				BA06A8B321F8A49B00914A71 /* EEPOMaster.h */,
+				BA06A8B421F8A49B00914A71 /* EEPOMaster.m */,
+				BA06A8BA21F8A95D00914A71 /* EEPOStorage.h */,
+				BA06A8BB21F8A95D00914A71 /* EEPOStorage.m */,
+				BA06A8BF21F8B1E600914A71 /* EEPOCommandParser.h */,
+				BA06A8C021F8B1E600914A71 /* EEPOCommandParser.m */,
 			);
 			path = "entity-exchange-protocol-objc";
 			sourceTree = "<group>";
@@ -80,10 +137,21 @@
 		BA06A8A921F8A1F900914A71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA06A8AE21F8A39D00914A71 /* libsqlite3.tbd */,
+				BA06A8B021F8A3A200914A71 /* libsqlite3.tbd */,
 				BA06A8AC21F8A20200914A71 /* CocoaAsyncSocket.framework */,
 				BA06A8AA21F8A1F900914A71 /* CocoaAsyncSocket.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA06A8CA21F8B73500914A71 /* EntityExchangeProtocolObjCTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA06A8CD21F8B73500914A71 /* Info.plist */,
+				BA06A8D421F8B74D00914A71 /* ParserTests.m */,
+			);
+			path = EntityExchangeProtocolObjCTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,8 +161,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8C121F8B1E600914A71 /* EEPOCommandParser.h in Headers */,
 				BA06A88D21F89F5B00914A71 /* EntityExchangeProtocolObjc.h in Headers */,
+				BA06A8BC21F8A95D00914A71 /* EEPOStorage.h in Headers */,
+				BA06A8B821F8A91B00914A71 /* EEPOConnection+Private.h in Headers */,
 				BA06A8A521F8A09700914A71 /* EEPOConnection.h in Headers */,
+				BA06A8B521F8A49B00914A71 /* EEPOMaster.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +174,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8C221F8B1E600914A71 /* EEPOCommandParser.h in Headers */,
 				BA06A8A021F8A01200914A71 /* EntityExchangeProtocolObjc.h in Headers */,
+				BA06A8BE21F8A98600914A71 /* EEPOStorage.h in Headers */,
+				BA06A8B921F8A91B00914A71 /* EEPOConnection+Private.h in Headers */,
 				BA06A8A821F8A0E900914A71 /* EEPOConnection.h in Headers */,
+				BA06A8B721F8A4B200914A71 /* EEPOMaster.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +222,24 @@
 			productReference = BA06A89821F8A00800914A71 /* EntityExchangeProtocolObjC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BA06A8C821F8B73500914A71 /* EntityExchangeProtocolObjCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA06A8D121F8B73500914A71 /* Build configuration list for PBXNativeTarget "EntityExchangeProtocolObjCTests" */;
+			buildPhases = (
+				BA06A8C521F8B73500914A71 /* Sources */,
+				BA06A8C621F8B73500914A71 /* Frameworks */,
+				BA06A8C721F8B73500914A71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA06A8D021F8B73500914A71 /* PBXTargetDependency */,
+			);
+			name = EntityExchangeProtocolObjCTests;
+			productName = EntityExchangeProtocolObjCTests;
+			productReference = BA06A8C921F8B73500914A71 /* EntityExchangeProtocolObjCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,6 +254,9 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					BA06A89721F8A00800914A71 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BA06A8C821F8B73500914A71 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -178,6 +275,7 @@
 			targets = (
 				BA06A88721F89F5B00914A71 /* entity-exchange-protocol-objc */,
 				BA06A89721F8A00800914A71 /* entity-exchange-protocol-objc-iOS */,
+				BA06A8C821F8B73500914A71 /* EntityExchangeProtocolObjCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +295,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA06A8C721F8B73500914A71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -204,7 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8BD21F8A95D00914A71 /* EEPOStorage.m in Sources */,
+				BA06A8B621F8A49B00914A71 /* EEPOMaster.m in Sources */,
 				BA06A8A621F8A09700914A71 /* EEPOConnection.m in Sources */,
+				BA06A8C321F8B1E600914A71 /* EEPOCommandParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,10 +321,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA06A8A721F8A0BE00914A71 /* EEPOConnection.m in Sources */,
+				BA06A8C421F8B1E600914A71 /* EEPOCommandParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA06A8C521F8B73500914A71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA06A8D521F8B74D00914A71 /* ParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA06A8D021F8B73500914A71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA06A88721F89F5B00914A71 /* entity-exchange-protocol-objc */;
+			targetProxy = BA06A8CF21F8B73500914A71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BA06A88E21F89F5B00914A71 /* Debug */ = {
@@ -362,6 +487,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbcc-double.entity-exchange-protocol-objc";
 				SKIP_INSTALL = YES;
 			};
@@ -391,6 +517,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbcc-double.entity-exchange-protocol-objc";
 				SKIP_INSTALL = YES;
 			};
@@ -412,7 +539,7 @@
 				);
 				INFOPLIST_FILE = "entity-exchange-protocol-objc/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +568,7 @@
 				);
 				INFOPLIST_FILE = "entity-exchange-protocol-objc/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +579,42 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA06A8D221F8B73500914A71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 656N9BNR2U;
+				INFOPLIST_FILE = EntityExchangeProtocolObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					$SRCROOT/Carthage/Build/Mac,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbcc-double.EntityExchangeProtocolObjCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA06A8D321F8B73500914A71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 656N9BNR2U;
+				INFOPLIST_FILE = EntityExchangeProtocolObjCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					$SRCROOT/Carthage/Build/Mac,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aabbcc-double.EntityExchangeProtocolObjCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -481,6 +644,15 @@
 			buildConfigurations = (
 				BA06A89E21F8A00800914A71 /* Debug */,
 				BA06A89F21F8A00800914A71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA06A8D121F8B73500914A71 /* Build configuration list for PBXNativeTarget "EntityExchangeProtocolObjCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA06A8D221F8B73500914A71 /* Debug */,
+				BA06A8D321F8B73500914A71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
