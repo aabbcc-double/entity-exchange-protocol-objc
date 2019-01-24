@@ -31,6 +31,15 @@
 		BA06A8C421F8B1E600914A71 /* EEPOCommandParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8C021F8B1E600914A71 /* EEPOCommandParser.m */; };
 		BA06A8CE21F8B73500914A71 /* EntityExchangeProtocolObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A88821F89F5B00914A71 /* EntityExchangeProtocolObjC.framework */; };
 		BA06A8D521F8B74D00914A71 /* ParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8D421F8B74D00914A71 /* ParserTests.m */; };
+		BA06A8D721F8BF1100914A71 /* MasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8D621F8BF1100914A71 /* MasterTests.m */; };
+		BA06A8E021F9CA1100914A71 /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A8D821F9C96D00914A71 /* OCMockito.framework */; };
+		BA06A8E121F9CA1100914A71 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA06A8DA21F9C96F00914A71 /* OCHamcrest.framework */; };
+		BA06A8E221F9D94A00914A71 /* EEPOMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8B421F8A49B00914A71 /* EEPOMaster.m */; };
+		BA06A8E321F9D94C00914A71 /* EEPOStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8BB21F8A95D00914A71 /* EEPOStorage.m */; };
+		BA06A8E621F9D97300914A71 /* EEPOSlave.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8E421F9D97300914A71 /* EEPOSlave.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8E721F9D97300914A71 /* EEPOSlave.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8E421F9D97300914A71 /* EEPOSlave.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8E821F9D97300914A71 /* EEPOSlave.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8E521F9D97300914A71 /* EEPOSlave.m */; };
+		BA06A8E921F9D97300914A71 /* EEPOSlave.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8E521F9D97300914A71 /* EEPOSlave.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +73,13 @@
 		BA06A8C921F8B73500914A71 /* EntityExchangeProtocolObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntityExchangeProtocolObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA06A8CD21F8B73500914A71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA06A8D421F8B74D00914A71 /* ParserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParserTests.m; sourceTree = "<group>"; };
+		BA06A8D621F8BF1100914A71 /* MasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterTests.m; sourceTree = "<group>"; };
+		BA06A8D821F9C96D00914A71 /* OCMockito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockito.framework; path = Carthage/Build/Mac/OCMockito.framework; sourceTree = "<group>"; };
+		BA06A8DA21F9C96F00914A71 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Carthage/Build/Mac/OCHamcrest.framework; sourceTree = "<group>"; };
+		BA06A8DC21F9C97800914A71 /* OCMockito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockito.framework; path = Carthage/Build/iOS/OCMockito.framework; sourceTree = "<group>"; };
+		BA06A8DE21F9C97A00914A71 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Carthage/Build/iOS/OCHamcrest.framework; sourceTree = "<group>"; };
+		BA06A8E421F9D97300914A71 /* EEPOSlave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOSlave.h; sourceTree = "<group>"; };
+		BA06A8E521F9D97300914A71 /* EEPOSlave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOSlave.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +106,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA06A8CE21F8B73500914A71 /* EntityExchangeProtocolObjC.framework in Frameworks */,
+				BA06A8E021F9CA1100914A71 /* OCMockito.framework in Frameworks */,
+				BA06A8E121F9CA1100914A71 /* OCHamcrest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +148,8 @@
 				BA06A8BB21F8A95D00914A71 /* EEPOStorage.m */,
 				BA06A8BF21F8B1E600914A71 /* EEPOCommandParser.h */,
 				BA06A8C021F8B1E600914A71 /* EEPOCommandParser.m */,
+				BA06A8E421F9D97300914A71 /* EEPOSlave.h */,
+				BA06A8E521F9D97300914A71 /* EEPOSlave.m */,
 			);
 			path = "entity-exchange-protocol-objc";
 			sourceTree = "<group>";
@@ -137,6 +157,10 @@
 		BA06A8A921F8A1F900914A71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA06A8DE21F9C97A00914A71 /* OCHamcrest.framework */,
+				BA06A8DC21F9C97800914A71 /* OCMockito.framework */,
+				BA06A8DA21F9C96F00914A71 /* OCHamcrest.framework */,
+				BA06A8D821F9C96D00914A71 /* OCMockito.framework */,
 				BA06A8AE21F8A39D00914A71 /* libsqlite3.tbd */,
 				BA06A8B021F8A3A200914A71 /* libsqlite3.tbd */,
 				BA06A8AC21F8A20200914A71 /* CocoaAsyncSocket.framework */,
@@ -150,6 +174,7 @@
 			children = (
 				BA06A8CD21F8B73500914A71 /* Info.plist */,
 				BA06A8D421F8B74D00914A71 /* ParserTests.m */,
+				BA06A8D621F8BF1100914A71 /* MasterTests.m */,
 			);
 			path = EntityExchangeProtocolObjCTests;
 			sourceTree = "<group>";
@@ -164,6 +189,7 @@
 				BA06A8C121F8B1E600914A71 /* EEPOCommandParser.h in Headers */,
 				BA06A88D21F89F5B00914A71 /* EntityExchangeProtocolObjc.h in Headers */,
 				BA06A8BC21F8A95D00914A71 /* EEPOStorage.h in Headers */,
+				BA06A8E621F9D97300914A71 /* EEPOSlave.h in Headers */,
 				BA06A8B821F8A91B00914A71 /* EEPOConnection+Private.h in Headers */,
 				BA06A8A521F8A09700914A71 /* EEPOConnection.h in Headers */,
 				BA06A8B521F8A49B00914A71 /* EEPOMaster.h in Headers */,
@@ -177,6 +203,7 @@
 				BA06A8C221F8B1E600914A71 /* EEPOCommandParser.h in Headers */,
 				BA06A8A021F8A01200914A71 /* EntityExchangeProtocolObjc.h in Headers */,
 				BA06A8BE21F8A98600914A71 /* EEPOStorage.h in Headers */,
+				BA06A8E721F9D97300914A71 /* EEPOSlave.h in Headers */,
 				BA06A8B921F8A91B00914A71 /* EEPOConnection+Private.h in Headers */,
 				BA06A8A821F8A0E900914A71 /* EEPOConnection.h in Headers */,
 				BA06A8B721F8A4B200914A71 /* EEPOMaster.h in Headers */,
@@ -309,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8E821F9D97300914A71 /* EEPOSlave.m in Sources */,
 				BA06A8BD21F8A95D00914A71 /* EEPOStorage.m in Sources */,
 				BA06A8B621F8A49B00914A71 /* EEPOMaster.m in Sources */,
 				BA06A8A621F8A09700914A71 /* EEPOConnection.m in Sources */,
@@ -320,7 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8E921F9D97300914A71 /* EEPOSlave.m in Sources */,
+				BA06A8E221F9D94A00914A71 /* EEPOMaster.m in Sources */,
 				BA06A8A721F8A0BE00914A71 /* EEPOConnection.m in Sources */,
+				BA06A8E321F9D94C00914A71 /* EEPOStorage.m in Sources */,
 				BA06A8C421F8B1E600914A71 /* EEPOCommandParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA06A8D521F8B74D00914A71 /* ParserTests.m in Sources */,
+				BA06A8D721F8BF1100914A71 /* MasterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +620,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 656N9BNR2U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = EntityExchangeProtocolObjCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -606,6 +642,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 656N9BNR2U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = EntityExchangeProtocolObjCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

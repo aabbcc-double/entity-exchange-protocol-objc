@@ -6,7 +6,7 @@
 @protected
     EEPOConnectionStatus _status;
     id __weak _delegate;
-    GCDAsyncSocket *_socket;
+    GCDAsyncSocket * __strong _socket;
 }
 
 - (instancetype)initPrivate;

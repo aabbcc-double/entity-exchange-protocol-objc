@@ -6,15 +6,15 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NSInteger EEPOCommandType;
 
 typedef NS_ENUM(EEPOCommandType, EEPOCommandV1) {
-    EEPOCommandV1Meta,
-    EEPOCommandV1Close,
-    EEPOCommandV1EAdd,
-    EEPOCommandV1EDelete,
-    EEPOCommandV1EModify
+    EEPOCommandV1Meta = 0,
+    EEPOCommandV1Close = 1,
+    EEPOCommandV1EAdd = 2,
+    EEPOCommandV1EDelete = 3,
+    EEPOCommandV1EModify = 4
 };
 
 typedef NS_ENUM(NSInteger, EEPOProtocolVersion) {
-    EEPOProtocolVersion1
+    EEPOProtocolVersion1 = 1
 };
 
 @interface EEPOCommandParser : NSObject

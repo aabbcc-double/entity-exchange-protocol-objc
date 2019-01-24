@@ -1,1 +1,3 @@
+github "hamcrest/OCHamcrest" "v7.1.1"
+github "jonreid/OCMockito" "v5.1.1"
 github "robbiehanson/CocoaAsyncSocket" "7.6.3"

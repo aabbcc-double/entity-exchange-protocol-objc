@@ -5,6 +5,7 @@
 
 @interface EEPOMaster() <GCDAsyncSocketDelegate>
 @property (nonatomic) EEPOCommandParser *parser;
+@property (nonatomic) GCDAsyncSocket *slaveSocket;
 @end
 
 @implementation EEPOMaster
@@ -22,12 +23,22 @@
 }
 
 - (void)enqueueNextRead {
-    [_socket readDataToData:[GCDAsyncSocket ZeroData] withTimeout:-1 tag:0];
+    [_slaveSocket readDataToData:[GCDAsyncSocket ZeroData] withTimeout:-1 tag:0];
 }
 
 #pragma mark - GCDAsyncSocketDelegate
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
     [self enqueueNextRead];
+
+    EEPOCommandType command;
+    NSDictionary<NSString *, id> *args;
+    [self.parser parse:data into:&command args:&args withError:nil];
+
+    switch (command) {
+        case EEPOCommandV1Meta:
+            [self.delegate master:self didConnectClientWithMetaInfo:args];
+            break;
+    }
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag {
@@ -35,6 +46,7 @@
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didAcceptNewSocket:(GCDAsyncSocket *)newSocket {
+    _slaveSocket = newSocket;
     _status = EEPOConnectionStatusConnected;
     [self.delegate connection:self didUpdateConnectionStatus:_status];
     [self enqueueNextRead];
