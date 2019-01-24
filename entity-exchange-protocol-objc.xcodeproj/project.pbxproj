@@ -40,6 +40,14 @@
 		BA06A8E721F9D97300914A71 /* EEPOSlave.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8E421F9D97300914A71 /* EEPOSlave.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA06A8E821F9D97300914A71 /* EEPOSlave.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8E521F9D97300914A71 /* EEPOSlave.m */; };
 		BA06A8E921F9D97300914A71 /* EEPOSlave.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8E521F9D97300914A71 /* EEPOSlave.m */; };
+		BA06A8EC21FA00BC00914A71 /* EEPOEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8EA21FA00BC00914A71 /* EEPOEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8ED21FA00BC00914A71 /* EEPOEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8EA21FA00BC00914A71 /* EEPOEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8EE21FA00BC00914A71 /* EEPOEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8EB21FA00BC00914A71 /* EEPOEntity.m */; };
+		BA06A8EF21FA00BC00914A71 /* EEPOEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8EB21FA00BC00914A71 /* EEPOEntity.m */; };
+		BA06A8F321FA020400914A71 /* EEPOMutableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8F121FA020400914A71 /* EEPOMutableEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8F421FA020400914A71 /* EEPOMutableEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = BA06A8F121FA020400914A71 /* EEPOMutableEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA06A8F521FA020400914A71 /* EEPOMutableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8F221FA020400914A71 /* EEPOMutableEntity.m */; };
+		BA06A8F621FA020400914A71 /* EEPOMutableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06A8F221FA020400914A71 /* EEPOMutableEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +88,11 @@
 		BA06A8DE21F9C97A00914A71 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Carthage/Build/iOS/OCHamcrest.framework; sourceTree = "<group>"; };
 		BA06A8E421F9D97300914A71 /* EEPOSlave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOSlave.h; sourceTree = "<group>"; };
 		BA06A8E521F9D97300914A71 /* EEPOSlave.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOSlave.m; sourceTree = "<group>"; };
+		BA06A8EA21FA00BC00914A71 /* EEPOEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOEntity.h; sourceTree = "<group>"; };
+		BA06A8EB21FA00BC00914A71 /* EEPOEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOEntity.m; sourceTree = "<group>"; };
+		BA06A8F021FA015600914A71 /* EEPOEntity+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEPOEntity+Protected.h"; sourceTree = "<group>"; };
+		BA06A8F121FA020400914A71 /* EEPOMutableEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EEPOMutableEntity.h; sourceTree = "<group>"; };
+		BA06A8F221FA020400914A71 /* EEPOMutableEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEPOMutableEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +163,11 @@
 				BA06A8C021F8B1E600914A71 /* EEPOCommandParser.m */,
 				BA06A8E421F9D97300914A71 /* EEPOSlave.h */,
 				BA06A8E521F9D97300914A71 /* EEPOSlave.m */,
+				BA06A8EA21FA00BC00914A71 /* EEPOEntity.h */,
+				BA06A8F121FA020400914A71 /* EEPOMutableEntity.h */,
+				BA06A8F221FA020400914A71 /* EEPOMutableEntity.m */,
+				BA06A8F021FA015600914A71 /* EEPOEntity+Protected.h */,
+				BA06A8EB21FA00BC00914A71 /* EEPOEntity.m */,
 			);
 			path = "entity-exchange-protocol-objc";
 			sourceTree = "<group>";
@@ -186,7 +204,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8EC21FA00BC00914A71 /* EEPOEntity.h in Headers */,
 				BA06A8C121F8B1E600914A71 /* EEPOCommandParser.h in Headers */,
+				BA06A8F321FA020400914A71 /* EEPOMutableEntity.h in Headers */,
 				BA06A88D21F89F5B00914A71 /* EntityExchangeProtocolObjc.h in Headers */,
 				BA06A8BC21F8A95D00914A71 /* EEPOStorage.h in Headers */,
 				BA06A8E621F9D97300914A71 /* EEPOSlave.h in Headers */,
@@ -200,7 +220,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06A8ED21FA00BC00914A71 /* EEPOEntity.h in Headers */,
 				BA06A8C221F8B1E600914A71 /* EEPOCommandParser.h in Headers */,
+				BA06A8F421FA020400914A71 /* EEPOMutableEntity.h in Headers */,
 				BA06A8A021F8A01200914A71 /* EntityExchangeProtocolObjc.h in Headers */,
 				BA06A8BE21F8A98600914A71 /* EEPOStorage.h in Headers */,
 				BA06A8E721F9D97300914A71 /* EEPOSlave.h in Headers */,
@@ -337,7 +359,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA06A8E821F9D97300914A71 /* EEPOSlave.m in Sources */,
+				BA06A8EE21FA00BC00914A71 /* EEPOEntity.m in Sources */,
 				BA06A8BD21F8A95D00914A71 /* EEPOStorage.m in Sources */,
+				BA06A8F521FA020400914A71 /* EEPOMutableEntity.m in Sources */,
 				BA06A8B621F8A49B00914A71 /* EEPOMaster.m in Sources */,
 				BA06A8A621F8A09700914A71 /* EEPOConnection.m in Sources */,
 				BA06A8C321F8B1E600914A71 /* EEPOCommandParser.m in Sources */,
@@ -349,7 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA06A8E921F9D97300914A71 /* EEPOSlave.m in Sources */,
+				BA06A8EF21FA00BC00914A71 /* EEPOEntity.m in Sources */,
 				BA06A8E221F9D94A00914A71 /* EEPOMaster.m in Sources */,
+				BA06A8F621FA020400914A71 /* EEPOMutableEntity.m in Sources */,
 				BA06A8A721F8A0BE00914A71 /* EEPOConnection.m in Sources */,
 				BA06A8E321F9D94C00914A71 /* EEPOStorage.m in Sources */,
 				BA06A8C421F8B1E600914A71 /* EEPOCommandParser.m in Sources */,

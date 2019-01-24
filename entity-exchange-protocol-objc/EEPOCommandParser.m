@@ -18,8 +18,8 @@
             return @"CLOSE";
         case EEPOCommandV1EDelete:
             return @"EDELETE";
-        case EEPOCommandV1EModify:
-            return @"EMODIFIED";
+        case EEPOCommandV1EReplace:
+            return @"EREPLACE";
         case EEPOCommandV1EAdd:
             return @"EADD";
     }
@@ -92,8 +92,8 @@
         *command = EEPOCommandV1EAdd;
     } else if ([commandStr isEqualToString:@"EDELETE"]) {
         *command = EEPOCommandV1EDelete;
-    } else if ([commandStr isEqualToString:@"EMODIFIED"]) {
-        *command = EEPOCommandV1EModify;
+    } else if ([commandStr isEqualToString:@"EREPLACE"]) {
+        *command = EEPOCommandV1EReplace;
     }
 
     return YES;

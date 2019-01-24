@@ -75,15 +75,15 @@
     XCTAssertEqualObjects(dict, expected);
 }
 
-- (void)testParsingEModifyCommand {
+- (void)testParsingEReplaceCommand {
     EEPOCommandV1 command;
     NSDictionary<NSString *, id> *dict;
     NSError *error;
 
-    NSData *data = [@"EMODIFIED {\"some_data\": null, \"number\": 1234 }\0" dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [@"EREPLACE {\"some_data\": null, \"number\": 1234 }\0" dataUsingEncoding:NSUTF8StringEncoding];
 
     XCTAssertTrue([self.parser parse:data into:&command args:&dict withError:&error]);
-    XCTAssertEqual(command, EEPOCommandV1EModify);
+    XCTAssertEqual(command, EEPOCommandV1EReplace);
     XCTAssertNil(error);
     id expected = @{
                     @"some_data": [NSNull null],

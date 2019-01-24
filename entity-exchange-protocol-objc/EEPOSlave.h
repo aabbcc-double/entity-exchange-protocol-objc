@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<EEPOConnectionDelegate, EEPOSlaveDelegate> delegate;
 
 - (instancetype)initWithHost:(NSString *)host port:(NSUInteger)port NS_DESIGNATED_INITIALIZER;
+- (void)disconnect:(BOOL)force;
 @end
 
 @protocol EEPOSlaveDelegate

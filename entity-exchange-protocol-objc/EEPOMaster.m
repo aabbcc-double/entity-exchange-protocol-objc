@@ -54,7 +54,7 @@
 
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err {
     _status = EEPOConnectionStatusDisconnected;
-    [_socket disconnect];
+    _slaveSocket = nil;
     [self.delegate connection:self didUpdateConnectionStatus:_status];
 }
 @end

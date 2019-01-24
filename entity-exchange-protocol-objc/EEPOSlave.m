@@ -5,6 +5,7 @@
 
 @interface EEPOSlave () <GCDAsyncSocketDelegate>
 @property (nonatomic) EEPOCommandParser *parser;
+@property (nonatomic) BOOL shouldReconnect;
 @end
 
 @implementation EEPOSlave
@@ -20,12 +21,21 @@
         [_socket connectToHost:host onPort:port error:nil];
         _status = EEPOConnectionStatusConnecting;
         _parser = [[EEPOCommandParser alloc] initWithVersion:EEPOProtocolVersion1];
+        _shouldReconnect = YES;
     }
     return self;
 }
 
 - (void)enqueueNextRead {
     [_socket readDataToData:[GCDAsyncSocket ZeroData] withTimeout:-1 tag:0];
+}
+
+- (void)disconnect:(BOOL)force {
+    if (force) {
+        [_socket disconnect];
+    } else {
+        [_socket disconnectAfterWriting];
+    }
 }
 
 #pragma mark - GCDAsyncSocketDelegate
@@ -48,6 +58,17 @@
 
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
     [self enqueueNextRead];
+}
+
+- (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err {
+    _status = EEPOConnectionStatusDisconnected;
+    [self.delegate connection:self didUpdateConnectionStatus:_status];
+
+    if (self.shouldReconnect) {
+        _status = EEPOConnectionStatusConnecting;
+        [self.delegate connection:self didUpdateConnectionStatus:_status];
+        [_socket connectToHost:self.host onPort:self.port error:nil];
+    }
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag {

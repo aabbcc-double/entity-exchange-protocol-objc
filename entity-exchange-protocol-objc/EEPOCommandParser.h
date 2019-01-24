@@ -10,7 +10,7 @@ typedef NS_ENUM(EEPOCommandType, EEPOCommandV1) {
     EEPOCommandV1Close = 1,
     EEPOCommandV1EAdd = 2,
     EEPOCommandV1EDelete = 3,
-    EEPOCommandV1EModify = 4
+    EEPOCommandV1EReplace = 4
 };
 
 typedef NS_ENUM(NSInteger, EEPOProtocolVersion) {
